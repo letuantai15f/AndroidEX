@@ -22,6 +22,7 @@ public class ThongtinSQL extends SQLiteOpenHelper {
         return database.rawQuery(sql,null);
     }
 
+
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 

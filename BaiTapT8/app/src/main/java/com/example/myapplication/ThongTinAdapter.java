@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,15 +39,33 @@ public class ThongTinAdapter extends ArrayAdapter<ThongtinEntity> {
         button=convertView.findViewById(R.id.btnxoa);
         ThongtinEntity thongtinEntity= entityArrayList.get(position);
         thongtin.setText(thongtinEntity.getThongtin());
+        thongtinSQL=new ThongtinSQL(context,"ThongTin.sqlite",null,1);
+        thongtinSQL.QueryData("CREATE TABLE IF NOT EXISTS ThongTin(stt INTEGER  PRIMARY KEY  AUTOINCREMENT,  ChiTiet VARCHAR(200))");
         stt.setText(Integer.toString(thongtinEntity.getId()) );
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
 //                Toast.makeText(context, stt.getText(), Toast.LENGTH_SHORT).show();
-                thongtinSQL.QueryData("Delete From ThongTin where stt="+stt.getText()+"");
+               thongtinSQL.QueryData("DELETE From ThongTin Where stt="+stt.getText()+"");
+                notifyDataSetChanged();
+                Cursor datathongtin=thongtinSQL.GetData("select * from ThongTin");
+
+
+
+                while (datathongtin.moveToNext()){
+                    String ten=datathongtin.getString(1);
+                    int id=datathongtin.getInt(0);
+                    entityArrayList.add(new ThongtinEntity(id,ten));
+
+                }
+
+
 
             }
         });
+        notifyDataSetInvalidated();
+
         return  convertView;
     }
 }
