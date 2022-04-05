@@ -9,10 +9,10 @@
         android:id="@+id/thongtin"
         android:layout_width="160dp"
         android:layout_height="47dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="32dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.286"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,7 +21,7 @@
         android:layout_width="58dp"
         android:layout_height="51dp"
         android:layout_marginTop="36dp"
-        android:background="null"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toEndOf="@+id/thongtin"
@@ -34,11 +34,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="null"
+
         app:layout_constraintEnd_toStartOf="@+id/btnxoa"
         app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toEndOf="@+id/thongtin"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/iconupdate"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
