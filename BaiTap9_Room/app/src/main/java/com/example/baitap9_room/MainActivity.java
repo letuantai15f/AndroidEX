@@ -57,5 +57,7 @@ public class MainActivity extends AppCompatActivity {
         UserDB.getInstance(this).userDao().insertAll(entityUser);
         Toast.makeText(this, "Thanh Cong", Toast.LENGTH_SHORT).show();
         txtnhap.setText("");
+       entityUsers= (ArrayList<EntityUser>) UserDB.getInstance(this).userDao().getAll();
+       userAdappter.setData(entityUsers);
     }
 }

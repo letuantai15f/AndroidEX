@@ -7,6 +7,7 @@ import androidx.room.Query;
 
 import com.example.baitap9_room.EntityUser;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Dao
