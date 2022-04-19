@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.683" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/txtemailsign"
         android:layout_width="299dp"
         android:layout_height="65dp"
         android:ems="10"
@@ -59,7 +59,7 @@
         app:layout_constraintVertical_bias="0.453" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edtpass"
         android:layout_width="302dp"
         android:layout_height="65dp"
         android:ems="10"
@@ -67,11 +67,12 @@
         android:inputType="textPassword"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtemailsign"
         app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintVertical_bias="0.241" />
+        app:layout_constraintStart_toStartOf="@+id/txtemailsign"
+        app:layout_constraintTop_toBottomOf="@+id/txtemailsign"
+        app:layout_constraintVertical_bias="0.241"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView"
@@ -116,11 +117,11 @@
         android:layout_height="25dp"
         android:background="@drawable/icon_eye"
         android:padding="5dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/edtpass"
+        app:layout_constraintEnd_toEndOf="@+id/edtpass"
         app:layout_constraintHorizontal_bias="0.963"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/edtpass"
+        app:layout_constraintTop_toTopOf="@+id/edtpass"
         app:layout_constraintVertical_bias="0.675"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
