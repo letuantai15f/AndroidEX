@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         btnadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 addUser();
             }
 
@@ -60,4 +63,6 @@ public class MainActivity extends AppCompatActivity {
        entityUsers= (ArrayList<EntityUser>) UserDB.getInstance(this).userDao().getAll();
        userAdappter.setData(entityUsers);
     }
+
+
 }
