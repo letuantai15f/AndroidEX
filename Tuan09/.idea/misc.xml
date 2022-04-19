@@ -3,10 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Tai/Desktop/AndroidEX/Tuan09/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Tai/Desktop/AndroidEX/Tuan09/app/src/main/res/layout/home.xml" value="0.1" />
-        <entry key="..\:/Users/Tai/Desktop/AndroidEX/Tuan09/app/src/main/res/layout/register.xml" value="0.1" />
-        <entry key="..\:/Users/Tai/Desktop/AndroidEX/Tuan09/app/src/main/res/layout/sign_in.xml" value="0.1" />
+        <entry key="..\:/Users/Tai/Desktop/AndroidEX/Tuan09/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Tai/Desktop/AndroidEX/Tuan09/app/src/main/res/layout/home.xml" value="0.22" />
+        <entry key="..\:/Users/Tai/Desktop/AndroidEX/Tuan09/app/src/main/res/layout/register.xml" value="0.22" />
+        <entry key="..\:/Users/Tai/Desktop/AndroidEX/Tuan09/app/src/main/res/layout/sign_in.xml" value="0.22" />
         <entry key="app/src/main/res/drawable/bg_btn_register.xml" value="0.24074074074074073" />
         <entry key="app/src/main/res/drawable/bg_btn_sign_in.xml" value="0.24074074074074073" />
         <entry key="app/src/main/res/layout-land/home.xml" value="0.1948853615520282" />

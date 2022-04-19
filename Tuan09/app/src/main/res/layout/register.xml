@@ -67,8 +67,7 @@
         android:layout_width="302dp"
         android:layout_height="65dp"
         android:ems="10"
-        android:hint="Password"
-        android:hintTextColor="#546E7A"
+
         android:inputType="textPassword"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
@@ -83,8 +82,8 @@
         android:layout_width="302dp"
         android:layout_height="65dp"
         android:ems="10"
-        android:hint="Password"
-        android:hintTextColor="#546E7A"
+
+
         android:inputType="textPassword"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
@@ -119,7 +118,7 @@
         app:srcCompat="@drawable/icon_google" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtgg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="REGISTER WITH GOOGLE"
